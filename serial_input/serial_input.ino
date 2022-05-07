@@ -1,3 +1,19 @@
+/******************************************************************************
+Force_Sensitive_Resistor_Example.ino
+Example sketch for SparkFun's force sensitive resistors
+  (https://www.sparkfun.com/products/9375)
+Jim Lindblom @ SparkFun Electronics
+April 28, 2016
+
+Create a voltage divider circuit combining an FSR with a 3.3k resistor.
+- The resistor should connect from A0 to GND.
+- The FSR should connect from A0 to 3.3V
+As the resistance of the FSR decreases (meaning an increase in pressure), the
+voltage at A0 should increase.
+
+Development environment specifics:
+Arduino 1.6.7
+******************************************************************************/
 const int FSR_PIN = A0; // Pin connected to FSR/resistor divider
 
 // Measure the voltage at 5V and resistance of your 3.3k resistor, and enter
